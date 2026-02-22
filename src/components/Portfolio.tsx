@@ -52,12 +52,12 @@ export default function Portfolio() {
     const { t } = useLanguage();
 
     return (
-        <section id="portfolio" className="py-24 px-6 bg-white dark:bg-black">
+        <section id="portfolio" className="py-16 md:py-24 px-6 bg-white dark:bg-black">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16">
                     <div>
                         <span className="text-gray-400 text-sm tracking-widest uppercase mb-2 block">{t.portfolio.tagline}</span>
-                        <h2 className="text-5xl md:text-8xl font-syne font-bold tracking-tighter">{t.portfolio.title}</h2>
+                        <h2 className="text-4xl md:text-8xl font-syne font-bold tracking-tighter">{t.portfolio.title}</h2>
                     </div>
                     <p className="text-gray-500 max-w-md mt-4 md:mt-0">
                         {t.portfolio.description}

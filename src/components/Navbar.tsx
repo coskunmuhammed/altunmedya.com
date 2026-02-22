@@ -38,7 +38,7 @@ export default function Navbar() {
                 <Link href="/" className="flex items-center">
                     <Logo
                         scrolled={scrolled}
-                        className="h-20 w-auto"
+                        className="h-14 md:h-20 w-auto"
                     />
                 </Link>
 
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-4 md:hidden">
                     <button
                         onClick={() => setLanguage(language === "tr" ? "en" : "tr")}
-                        className="flex items-center gap-1 text-xs font-bold border border-white/20 px-2 py-1 rounded-full"
+                        className="flex items-center gap-1 text-[10px] font-bold border border-white/20 px-2 py-1 rounded-full text-white"
                     >
                         {language.toUpperCase()}
                     </button>
@@ -88,12 +88,12 @@ export default function Navbar() {
                         exit={{ opacity: 0, height: 0 }}
                         className="md:hidden bg-black/90 backdrop-blur-xl border-b border-white/5"
                     >
-                        <div className="px-6 py-8 flex flex-col space-y-4">
+                        <div className="px-6 py-12 flex flex-col space-y-6">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-lg font-medium text-white hover:text-white/70 transition-colors"
+                                    className="text-2xl font-syne font-bold text-white hover:text-white/70 transition-colors uppercase tracking-tight"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}

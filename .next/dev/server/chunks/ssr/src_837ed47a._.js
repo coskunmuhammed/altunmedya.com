@@ -209,7 +209,7 @@ function Navbar() {
                         className: "flex items-center",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Logo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             scrolled: scrolled,
-                            className: "h-20 w-auto"
+                            className: "h-14 md:h-20 w-auto"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Navbar.tsx",
                             lineNumber: 39,
@@ -261,7 +261,7 @@ function Navbar() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setLanguage(language === "tr" ? "en" : "tr"),
-                                className: "flex items-center gap-1 text-xs font-bold border border-white/20 px-2 py-1 rounded-full",
+                                className: "flex items-center gap-1 text-[10px] font-bold border border-white/20 px-2 py-1 rounded-full text-white",
                                 children: language.toUpperCase()
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navbar.tsx",
@@ -316,10 +316,10 @@ function Navbar() {
                     },
                     className: "md:hidden bg-black/90 backdrop-blur-xl border-b border-white/5",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "px-6 py-8 flex flex-col space-y-4",
+                        className: "px-6 py-12 flex flex-col space-y-6",
                         children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: link.href,
-                                className: "text-lg font-medium text-white hover:text-white/70 transition-colors",
+                                className: "text-2xl font-syne font-bold text-white hover:text-white/70 transition-colors uppercase tracking-tight",
                                 onClick: ()=>setIsOpen(false),
                                 children: link.name
                             }, link.name, false, {
@@ -414,7 +414,7 @@ function Hero() {
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-20 w-full max-w-7xl mx-auto px-6 h-full flex flex-col justify-center items-start lg:items-center pt-20",
+                className: "relative z-20 w-full max-w-7xl mx-auto px-6 h-full flex flex-col justify-center items-start lg:items-center pt-32 md:pt-20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                     initial: {
                         opacity: 0
@@ -440,7 +440,7 @@ function Hero() {
                                 duration: 1,
                                 ease: "easeOut"
                             },
-                            className: "text-[14vw] md:text-[16vw] text-white uppercase relative z-10",
+                            className: "text-[11vw] md:text-[16vw] text-white uppercase relative z-10",
                             children: "WE ARE"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Hero.tsx",
@@ -463,7 +463,7 @@ function Hero() {
                                     delay: 0.3,
                                     ease: "easeOut"
                                 },
-                                className: "text-[14vw] md:text-[20vw] text-red-600 uppercase relative",
+                                className: "text-[11vw] md:text-[20vw] text-red-600 uppercase relative",
                                 children: "VIDEO"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
@@ -488,7 +488,7 @@ function Hero() {
                                 duration: 1.2,
                                 delay: 0.8
                             },
-                            className: "text-[14vw] md:text-[18vw] text-white uppercase relative -mt-[4vw] md:-mt-[6vw] z-40 self-start md:self-center",
+                            className: "text-[11vw] md:text-[18vw] text-white uppercase relative -mt-[2vw] md:-mt-[6vw] z-40 self-start md:self-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "relative inline-block",
                                 children: [
@@ -658,7 +658,7 @@ function Services() {
         id: "services",
         ref: sectionRef,
         onMouseMove: handleMouseMove,
-        className: "relative py-40 px-6 bg-black text-white overflow-hidden",
+        className: "relative py-24 md:py-40 px-6 bg-black text-white overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                 className: "pointer-events-none absolute inset-0 z-0 opacity-40 blur-[100px]",
@@ -706,7 +706,7 @@ function Services() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h2, {
                                         variants: itemVariants,
-                                        className: "text-6xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter",
+                                        className: "text-5xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter",
                                         children: t.services.title_start
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Services.tsx",
@@ -715,7 +715,7 @@ function Services() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h2, {
                                         variants: itemVariants,
-                                        className: "text-6xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter overflow-hidden",
+                                        className: "text-5xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter overflow-hidden",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "flex",
                                             children: t.services.title_mid.split("").map((char, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].span, {
@@ -757,7 +757,7 @@ function Services() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h2, {
                                         variants: itemVariants,
-                                        className: "text-6xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter text-white/5",
+                                        className: "text-5xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter text-white/5",
                                         children: t.services.title_end
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Services.tsx",
@@ -970,12 +970,12 @@ function Portfolio() {
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$LanguageContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLanguage"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "portfolio",
-        className: "py-24 px-6 bg-white dark:bg-black",
+        className: "py-16 md:py-24 px-6 bg-white dark:bg-black",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-col md:flex-row justify-between items-end mb-16",
+                    className: "flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
@@ -988,7 +988,7 @@ function Portfolio() {
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-5xl md:text-8xl font-syne font-bold tracking-tighter",
+                                    className: "text-4xl md:text-8xl font-syne font-bold tracking-tighter",
                                     children: t.portfolio.title
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Portfolio.tsx",

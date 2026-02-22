@@ -29,7 +29,7 @@ export default function Hero() {
                 </video>
             </div>
 
-            <div className="relative z-20 w-full max-w-7xl mx-auto px-6 h-full flex flex-col justify-center items-start lg:items-center pt-20">
+            <div className="relative z-20 w-full max-w-7xl mx-auto px-6 h-full flex flex-col justify-center items-start lg:items-center pt-32 md:pt-20">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -41,7 +41,7 @@ export default function Hero() {
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1, ease: "easeOut" }}
-                        className="text-[14vw] md:text-[16vw] text-white uppercase relative z-10"
+                        className="text-[11vw] md:text-[16vw] text-white uppercase relative z-10"
                     >
                         WE ARE
                     </motion.div>
@@ -52,7 +52,7 @@ export default function Hero() {
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                            className="text-[14vw] md:text-[20vw] text-red-600 uppercase relative"
+                            className="text-[11vw] md:text-[20vw] text-red-600 uppercase relative"
                         >
                             VIDEO
                         </motion.div>
@@ -63,7 +63,7 @@ export default function Hero() {
                         initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.2, delay: 0.8 }}
-                        className="text-[14vw] md:text-[18vw] text-white uppercase relative -mt-[4vw] md:-mt-[6vw] z-40 self-start md:self-center"
+                        className="text-[11vw] md:text-[18vw] text-white uppercase relative -mt-[2vw] md:-mt-[6vw] z-40 self-start md:self-center"
                     >
                         <span className="relative inline-block">
                             STUDIO

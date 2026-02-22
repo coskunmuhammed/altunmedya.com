@@ -63,7 +63,7 @@ export default function Services() {
             id="services"
             ref={sectionRef}
             onMouseMove={handleMouseMove}
-            className="relative py-40 px-6 bg-black text-white overflow-hidden"
+            className="relative py-24 md:py-40 px-6 bg-black text-white overflow-hidden"
         >
             {/* Interactive Background Glow */}
             <motion.div
@@ -91,10 +91,10 @@ export default function Services() {
                         viewport={{ once: true }}
                         className="flex flex-col gap-2"
                     >
-                        <motion.h2 variants={itemVariants} className="text-6xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter">
+                        <motion.h2 variants={itemVariants} className="text-5xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter">
                             {t.services.title_start}
                         </motion.h2>
-                        <motion.h2 variants={itemVariants} className="text-6xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter overflow-hidden">
+                        <motion.h2 variants={itemVariants} className="text-5xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter overflow-hidden">
                             <span className="flex">
                                 {t.services.title_mid.split("").map((char, i) => (
                                     <motion.span
@@ -114,7 +114,7 @@ export default function Services() {
                                 ))}
                             </span>
                         </motion.h2>
-                        <motion.h2 variants={itemVariants} className="text-6xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter text-white/5">
+                        <motion.h2 variants={itemVariants} className="text-5xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter text-white/5">
                             {t.services.title_end}
                         </motion.h2>
                     </motion.div>
