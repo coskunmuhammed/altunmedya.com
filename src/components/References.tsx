@@ -13,10 +13,10 @@ const logos = [
     { id: 7, name: "Mert Sky", src: "/logos/mertskylogo.svg" },
     { id: 8, name: "Onyx Lounge", src: "/logos/onyxloungelogo.svg" },
     { id: 9, name: "Danışman Ol", src: "/logos/danismanol.svg", wide: true, href: "https://danismanol.com" },
-    { id: 10, name: "Mekan Suites", src: "/logos/mekansuites.svg", wide: true },
+    { id: 10, name: "Mekan", src: "/logos/mekanlogo.svg", wide: true },
     { id: 11, name: "Mülkünü Hesapla", src: "/logos/mulkunuhesapla.svg", wide: true, href: "https://mulkunuhesapla.com" },
-    { id: 12, name: "Sat Kirala", src: "/logos/satkirala.svg", wide: true, href: "https://satkirala.com" },
-    { id: 13, name: "Yat Sat Kirala", src: "/logos/yatsatkirala.svg", wide: true, href: "https://yatsatkirala.com" },
+    { id: 12, name: "Sat Kirala", src: "/logos/satkirala.com.svg", wide: true, href: "https://satkirala.com" },
+    { id: 13, name: "Yat Sat Kirala", src: "/logos/yatsatkirala.com.svg", wide: true, href: "https://yatsatkirala.com" },
     { id: 14, name: "Canon", src: "/logos/canonlogo.svg" },
     { id: 15, name: "Saat&Saat", src: "/logos/saatvesaat.svg" },
 ];
