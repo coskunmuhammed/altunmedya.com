@@ -83,6 +83,20 @@ export default function Hero() {
                 </motion.div>
             </div>
 
+            {/* FROM DIDIM Label (As seen in reference) */}
+            <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 2, duration: 1.2, ease: "easeOut" }}
+                className="absolute bottom-[5%] right-[5%] md:bottom-[8%] md:right-[8%] z-50 flex items-start gap-2 md:gap-4 font-anton text-white uppercase tracking-tighter select-none"
+            >
+                <div className="text-[12vw] md:text-[6vw] leading-none opacity-10 font-light translate-y-[-5%]">/</div>
+                <div className="flex flex-col leading-[0.75]">
+                    <div className="text-[4.5vw] md:text-[2vw] opacity-30">FROM</div>
+                    <div className="text-[10vw] md:text-[4.5vw] opacity-90 text-white">DIDIM</div>
+                </div>
+            </motion.div>
+
         </section>
     );
 }

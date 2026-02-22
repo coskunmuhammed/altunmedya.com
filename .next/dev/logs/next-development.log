@@ -123,3 +123,4 @@ Import traces:
     ./src/app/page.tsx [Server Component]
 [00:07:36.902] Server  LOG     ✓ Compiled in 68ms
 [00:10:52.495] Server  LOG     ✓ Compiled in 86ms
+[00:15:11.958] Server  LOG     ✓ Compiled in 80ms
