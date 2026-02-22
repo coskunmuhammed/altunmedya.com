@@ -48,10 +48,10 @@ export const translations = {
             description: "Sınırları zorlayan, estetik ve stratejiyi harmanlayan son dönem çalışmalarımızdan bazıları.",
             all_projects: "TÜM PROJELERİ GÖR",
             items: [
-                { title: "Times One Hundred", category: "Teknoloji", tags: ["TEKNOLOJİ", "MARKALAMA", "TASARIM"] },
-                { title: "Moments Infinity", category: "Sinematografi", tags: ["TEKNOLOJİ", "MARKALAMA", "TASARIM"] },
-                { title: "Görsel Kimlik", category: "Markalama", tags: ["MARKALAMA", "STRATEJİ"] },
-                { title: "Sokak Füzyonu", category: "Fotoğrafçılık", tags: ["FOTOĞRAF", "MODA"] },
+                { title: "Dijital Dönüşüm", category: "Teknoloji", tags: ["STRATEJİ", "MİSYON", "TASARIM"] },
+                { title: "Seo Danışmanlığı", category: "Sinematografi", tags: ["HARİTALAMA", "TASARIM"] },
+                { title: "Kurumsal Kimlik", category: "Markalama", tags: ["MARKALAMA", "STRATEJİ"] },
+                { title: "Web Tasarım", category: "Fotoğrafçılık", tags: ["WEB", "UI/UX"] },
             ]
         },
         contact: {
@@ -124,10 +124,10 @@ export const translations = {
             description: "Some of our recent work that pushes boundaries, blending aesthetics and strategy.",
             all_projects: "VIEW ALL PROJECTS",
             items: [
-                { title: "Times One Hundred", category: "Technology", tags: ["TECHNOLOGY", "BRANDING", "DESIGN"] },
-                { title: "Moments Infinity", category: "Cinematography", tags: ["TECHNOLOGY", "BRANDING", "DESIGN"] },
-                { title: "Visual ID", category: "Branding", tags: ["BRANDING", "STRATEGY"] },
-                { title: "Street Fusion", category: "Photography", tags: ["PHOTO", "FASHION"] },
+                { title: "Digital Transformation", category: "Technology", tags: ["STRATEGY", "MISSION", "DESIGN"] },
+                { title: "SEO Consultancy", category: "Cinematography", tags: ["MAPPING", "DESIGN"] },
+                { title: "Corporate Identity", category: "Branding", tags: ["BRANDING", "STRATEGY"] },
+                { title: "Web Design", category: "Photography", tags: ["WEB", "UI/UX"] },
             ]
         },
         contact: {
