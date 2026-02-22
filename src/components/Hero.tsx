@@ -1,4 +1,5 @@
 "use client";
+// Force Vercel redeploy for rotating locations
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
