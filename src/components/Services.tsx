@@ -107,14 +107,14 @@ export default function Services() {
                                             delay: 0.5 + (i * 0.1),
                                             ease: [0.33, 1, 0.68, 1]
                                         }}
-                                        className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/20 inline-block"
+                                        className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/50 inline-block"
                                     >
                                         {char === " " ? "\u00A0" : char}
                                     </motion.span>
                                 ))}
                             </span>
                         </motion.h2>
-                        <motion.h2 variants={itemVariants} className="text-5xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter text-white/5">
+                        <motion.h2 variants={itemVariants} className="text-5xl md:text-9xl font-syne font-bold leading-[0.85] uppercase tracking-tighter text-white/20">
                             {t.services.title_end}
                         </motion.h2>
                     </motion.div>

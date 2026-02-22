@@ -1198,6 +1198,20 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .to-white\/50 {
+    --tw-gradient-to: #ffffff80;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .to-white\/50 {
+      --tw-gradient-to: color-mix(in oklab, var(--color-white) 50%, transparent);
+    }
+  }
+
+  .to-white\/50 {
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
   .bg-cover {
     background-size: cover;
   }
@@ -1466,6 +1480,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .text-white\/5 {
       color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+
+  .text-white\/20 {
+    color: #fff3;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-white\/20 {
+      color: color-mix(in oklab, var(--color-white) 20%, transparent);
     }
   }
 
