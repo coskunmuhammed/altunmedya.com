@@ -72,7 +72,7 @@ export default function Hero() {
                                 width={400}
                                 height={200}
                                 unoptimized
-                                className="w-[35vw] md:w-[25vw] h-auto rounded-2xl border border-white/10 shadow-2xl"
+                                className="w-[35vw] md:w-[25vw] h-auto rounded-2xl"
                             />
                         </motion.div>
                     </div>
