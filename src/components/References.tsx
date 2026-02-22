@@ -17,6 +17,8 @@ const logos = [
     { id: 11, name: "Mülkünü Hesapla", src: "/logos/mulkunuhesapla.svg", wide: true, href: "https://mulkunuhesapla.com" },
     { id: 12, name: "Sat Kirala", src: "/logos/satkirala.svg", wide: true, href: "https://satkirala.com" },
     { id: 13, name: "Yat Sat Kirala", src: "/logos/yatsatkirala.svg", wide: true, href: "https://yatsatkirala.com" },
+    { id: 14, name: "Canon", src: "/logos/canonlogo.svg" },
+    { id: 15, name: "Saat&Saat", src: "/logos/saatvesaat.svg" },
 ];
 
 export default function References() {
@@ -41,9 +43,9 @@ export default function References() {
             <div className="relative flex">
                 <motion.div
                     className="flex space-x-12 md:space-x-24 items-center"
-                    animate={{ x: [0, -4500] }} // Increased offset for wider logos
+                    animate={{ x: [0, -5000] }} // Increased offset for more logos
                     transition={{
-                        duration: 50, // Slightly slower for more content
+                        duration: 60, // Slower for even more content
                         repeat: Infinity,
                         ease: "linear",
                     }}
@@ -52,8 +54,8 @@ export default function References() {
                         const content = (
                             <div
                                 className={`flex-shrink-0 flex items-center justify-center grayscale opacity-30 hover:opacity-100 hover:grayscale-0 transition-all duration-500 cursor-pointer ${logo.wide
-                                        ? "w-48 md:w-[277px] h-12 md:h-[100px]"
-                                        : "w-32 md:w-56 h-12 md:h-24"
+                                    ? "w-48 md:w-[277px] h-12 md:h-[100px]"
+                                    : "w-32 md:w-56 h-12 md:h-24"
                                     }`}
                             >
                                 <img
