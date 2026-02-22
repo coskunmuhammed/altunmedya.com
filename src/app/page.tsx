@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
+import References from "@/components/References";
 import Logo from "@/components/Logo";
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -16,6 +17,7 @@ export default function Home() {
             <Hero />
             <Services />
             <Portfolio />
+            <References />
 
             {/* Contact Section */}
             <section id="contact" className="py-40 px-6 bg-black text-white text-center">

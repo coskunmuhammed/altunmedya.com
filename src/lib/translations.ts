@@ -39,6 +39,9 @@ export const translations = {
             cta: "İLETİŞİME GEÇİN",
             rights: "Tüm hakları saklıdır.",
         },
+        references: {
+            title: "REFERANSLARIMIZ",
+        },
     },
     en: {
         nav: {
@@ -79,6 +82,9 @@ export const translations = {
             description: "Let's turn your innovative ideas into reality.",
             cta: "GET IN TOUCH",
             rights: "All rights reserved.",
+        },
+        references: {
+            title: "OUR CLIENTS",
         },
     },
 };
