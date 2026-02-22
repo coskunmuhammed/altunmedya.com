@@ -13,6 +13,7 @@ export const translations = {
             description: "Sadece içerik üretmiyoruz, markanızın parlamasını sağlayacak görsel dünyalar kuruyoruz.",
             cta_projects: "PROJELERİMİZİ GÖRÜN",
             cta_contact: "BİZE ULAŞIN",
+            motto: "ZAMANSIZ YARATICILIK",
         },
         services: {
             tagline: "Neler Yapıyoruz?",
@@ -53,6 +54,7 @@ export const translations = {
             description: "We don't just create content, we build visual worlds that make your brand shine.",
             cta_projects: "SEE OUR PROJECTS",
             cta_contact: "CONTACT US",
+            motto: "TIMELESS CREATIVITY",
         },
         services: {
             tagline: "What We Do?",

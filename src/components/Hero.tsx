@@ -89,7 +89,7 @@ export default function Hero() {
                         transition={{ delay: 1.5, duration: 1 }}
                         className="absolute bottom-[-15%] right-0 text-white/30 text-xs md:text-lg font-montserrat tracking-[0.3em] uppercase hidden md:block"
                     >
-                        Less is more, none is perfect
+                        {t.hero.motto}
                     </motion.p>
                 </motion.div>
             </div>
