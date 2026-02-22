@@ -97,8 +97,8 @@ export default function Footer() {
                 <div className="relative pt-10 border-t border-white/5">
                     <div className="flex flex-col md:flex-row justify-between items-end gap-10">
                         <div className="w-full">
-                            <h1 className="text-[15vw] md:text-[18vw] font-anton text-red-600/90 leading-none tracking-tighter select-none -mb-4 md:-mb-10 blur-[2px] opacity-100">
-                                ALTUNMEDYA
+                            <h1 className="text-[15vw] md:text-[18vw] font-anton text-red-600/90 leading-none tracking-tighter select-none -mb-4 md:-mb-10 blur-[2px] opacity-100 uppercase">
+                                ALTUN.STUDIO
                             </h1>
                         </div>
 
@@ -113,7 +113,7 @@ export default function Footer() {
                     </div>
 
                     <div className="mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-white/20 text-[10px] uppercase tracking-[0.3em] font-medium">
-                        <p>© 2026 ALTUNMEDYA. {t.contact.rights}</p>
+                        <p>© 2026 ALTUN.STUDIO. {t.contact.rights}</p>
                         <div className="flex gap-8 mt-4 md:mt-0">
                             <span className="hover:text-white/40 cursor-default transition-colors">POLICIES</span>
                             <span className="hover:text-white/40 cursor-default transition-colors">SITEMAP</span>
