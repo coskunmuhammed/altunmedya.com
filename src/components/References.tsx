@@ -3,11 +3,15 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
 
-// Placeholder logos - we'll replace these with real ones later
 const logos = [
-    { id: 1, name: "Reklam Deposu", src: "/images/logos/reklam-deposu.png" },
-    { id: 2, name: "SQ Beach Club", src: "/images/logos/sq-beach-club.png" },
-    { id: 3, name: "Halil Usta", src: "/images/logos/halil-usta.png" },
+    { id: 1, name: "Reklam Deposu", src: "/logos/reklamdeposulogo.svg" },
+    { id: 2, name: "SQ Beach Club", src: "/logos/sqbeachclub.svg" },
+    { id: 3, name: "Halil Usta", src: "/logos/halilustalogo.svg" },
+    { id: 4, name: "MNA Kuyumculuk", src: "/logos/mnakuyumculuk.svg" },
+    { id: 5, name: "Sensation", src: "/logos/Sensationlogo.svg" },
+    { id: 6, name: "Bulvar Künefe", src: "/logos/bulvarkünefelogo.svg" },
+    { id: 7, name: "Mert Sky", src: "/logos/mertskylogo.svg" },
+    { id: 8, name: "Onyx Lounge", src: "/logos/onyxloungelogo.svg" },
 ];
 
 export default function References() {
@@ -32,9 +36,9 @@ export default function References() {
             <div className="relative flex">
                 <motion.div
                     className="flex space-x-12 md:space-x-24 items-center"
-                    animate={{ x: [0, -1000] }} // Adjust -1000 based on total width
+                    animate={{ x: [0, -2000] }} // Adjusted for more logos
                     transition={{
-                        duration: 30,
+                        duration: 40,
                         repeat: Infinity,
                         ease: "linear",
                     }}
