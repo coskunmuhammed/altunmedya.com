@@ -17,8 +17,8 @@ const logos = [
     { id: 11, name: "Mülkünü Hesapla", src: "/logos/mulkunuhesapla.svg", wide: true, href: "https://mulkunuhesapla.com" },
     { id: 12, name: "Sat Kirala", src: "/logos/satkirala.com.svg", wide: true, href: "https://satkirala.com" },
     { id: 13, name: "Yat Sat Kirala", src: "/logos/yatsatkirala.com.svg", wide: true, href: "https://yatsatkirala.com" },
-    { id: 14, name: "Canon", src: "/logos/canonlogo.svg" },
-    { id: 15, name: "Saat&Saat", src: "/logos/saatvesaat.svg" },
+    { id: 14, name: "Canon", src: "/logos/canonlogo.svg", href: "https://canon.com.tr" },
+    { id: 15, name: "Saat&Saat", src: "/logos/saatvesaat.svg", href: "https://saatvesaat.com.tr" },
 ];
 
 export default function References() {
