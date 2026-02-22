@@ -9,6 +9,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 export default function Hero() {
     const { t } = useLanguage();
     const [locationIndex, setLocationIndex] = useState(0);
+    const [serviceIndex, setServiceIndex] = useState(0);
     const locations = ["DIDIM", "DUBAI", "LONDON", "OSLO", "KÖLN", "İSTANBUL"];
 
     useEffect(() => {
@@ -17,6 +18,13 @@ export default function Hero() {
         }, 3000);
         return () => clearInterval(timer);
     }, [locations.length]);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setServiceIndex((prev) => (prev + 1) % t.hero.services.length);
+        }, 3500);
+        return () => clearInterval(timer);
+    }, [t.hero.services.length]);
 
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
@@ -48,7 +56,7 @@ export default function Hero() {
                     transition={{ duration: 1 }}
                     className="relative flex flex-col font-anton leading-[0.8] tracking-tighter w-full"
                 >
-                    {/* First Line: WE ARE */}
+                    {/* First Line: BİZ / WE ARE */}
                     <div className="flex flex-col items-start">
                         <motion.div
                             initial={{ x: -100, opacity: 0 }}
@@ -56,10 +64,10 @@ export default function Hero() {
                             transition={{ duration: 1, ease: "easeOut" }}
                             className="text-[clamp(3.5rem,16vw,14rem)] text-white uppercase relative z-10 self-start -ml-[2vw] md:ml-0"
                         >
-                            WE ARE
+                            {t.hero.line1}
                         </motion.div>
 
-                        {/* GIF Element (under WE) */}
+                        {/* GIF Element (under line1) */}
                         <motion.div
                             initial={{ opacity: 0, y: 20, scale: 0.9 }}
                             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -77,9 +85,9 @@ export default function Hero() {
                         </motion.div>
                     </div>
 
-                    {/* Second & Third Line: VIDEO */}
+                    {/* Second & Third Line: ROTATING SERVICES (RED) */}
                     <div className="relative self-end -mt-[4vw] md:-mt-[6vw] z-30 flex flex-col items-end">
-                        {/* Second GIF Element (positioned over VIDEO) */}
+                        {/* Second GIF Element (positioned over red text) */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
@@ -96,17 +104,23 @@ export default function Hero() {
                             />
                         </motion.div>
 
-                        <motion.div
-                            initial={{ x: 100, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                            className="text-[clamp(5rem,20vw,18rem)] text-red-600 uppercase relative pr-[2vw] md:pr-0"
-                        >
-                            VIDEO
-                        </motion.div>
+                        <div className="relative h-[clamp(5rem,20vw,18rem)] flex items-center justify-end overflow-hidden w-full">
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={serviceIndex}
+                                    initial={{ y: "100%", opacity: 0 }}
+                                    animate={{ y: "0%", opacity: 1 }}
+                                    exit={{ y: "-100%", opacity: 0 }}
+                                    transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                                    className="text-[clamp(4rem,18vw,16rem)] text-red-600 uppercase relative pr-[2vw] md:pr-0 whitespace-nowrap"
+                                >
+                                    {t.hero.services[serviceIndex]}
+                                </motion.div>
+                            </AnimatePresence>
+                        </div>
                     </div>
 
-                    {/* Fourth Line: STUDIO (with blur/fade) */}
+                    {/* Fourth Line: AJANSIYIZ / AGENCY */}
                     <motion.div
                         initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
@@ -114,7 +128,7 @@ export default function Hero() {
                         className="text-[clamp(4.2rem,18vw,16rem)] text-white uppercase relative -mt-[4vw] md:-mt-[6vw] z-40 self-start md:self-center"
                     >
                         <span className="relative inline-block text-white">
-                            STUDIO
+                            {t.hero.line3}
                             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-10" />
                         </span>
                     </motion.div>

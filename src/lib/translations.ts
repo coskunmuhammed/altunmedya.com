@@ -8,8 +8,9 @@ export const translations = {
         },
         hero: {
             tagline: "Kreatif Medya Ajansı",
-            title1: "HİKAYENİZİ",
-            title2: "SANATLA ANLATIN",
+            line1: "BİZ",
+            line3: "AJANSIYIZ",
+            services: ["sosyal medya", "reklam", "tasarım", "web tasarım", "ui/ux", "dijital pazarlama", "E-ticaret", "dijital dönüşüm"],
             description: "Sadece içerik üretmiyoruz, markanızın parlamasını sağlayacak görsel dünyalar kuruyoruz.",
             cta_projects: "PROJELERİMİZİ GÖRÜN",
             cta_contact: "BİZE ULAŞIN",
@@ -83,8 +84,9 @@ export const translations = {
         },
         hero: {
             tagline: "Creative Media Agency",
-            title1: "TELL YOUR STORY",
-            title2: "THROUGH ART",
+            line1: "WE ARE",
+            line3: "AGENCY",
+            services: ["social media", "advertising", "design", "web design", "ui/ux", "digital marketing", "e-commerce", "digital transformation"],
             description: "We don't just create content, we build visual worlds that make your brand shine.",
             cta_projects: "SEE OUR PROJECTS",
             cta_contact: "CONTACT US",
