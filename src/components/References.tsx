@@ -9,9 +9,14 @@ const logos = [
     { id: 3, name: "Halil Usta", src: "/logos/halilustalogo.svg" },
     { id: 4, name: "MNA Kuyumculuk", src: "/logos/mnakuyumculuk.svg" },
     { id: 5, name: "Sensation", src: "/logos/Sensationlogo.svg" },
-    { id: 6, name: "Bulvar Künefe", src: "/logos/bulvarkünefelogo.svg" },
+    { id: 6, name: "Bulvar Künefe", src: "/logos/bulvarkunefelogo.svg" },
     { id: 7, name: "Mert Sky", src: "/logos/mertskylogo.svg" },
     { id: 8, name: "Onyx Lounge", src: "/logos/onyxloungelogo.svg" },
+    { id: 9, name: "Danışman Ol", src: "/logos/danismanol.svg" },
+    { id: 10, name: "Mekan Suites", src: "/logos/mekansuites.svg" },
+    { id: 11, name: "Mülkünü Hesapla", src: "/logos/mulkunuhesapla.svg" },
+    { id: 12, name: "Sat Kirala", src: "/logos/satkirala.svg" },
+    { id: 13, name: "Yat Sat Kirala", src: "/logos/yatsatkirala.svg" },
 ];
 
 export default function References() {
@@ -36,7 +41,7 @@ export default function References() {
             <div className="relative flex">
                 <motion.div
                     className="flex space-x-12 md:space-x-24 items-center"
-                    animate={{ x: [0, -2000] }} // Adjusted for more logos
+                    animate={{ x: [0, -3500] }} // Adjusted for more logos
                     transition={{
                         duration: 40,
                         repeat: Infinity,
