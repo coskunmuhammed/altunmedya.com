@@ -1,10 +1,20 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Hero() {
     const { t } = useLanguage();
+    const [locationIndex, setLocationIndex] = useState(0);
+    const locations = ["DIDIM", "DUBAI", "LONDON", "OSLO", "KÖLN", "İSTANBUL"];
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setLocationIndex((prev) => (prev + 1) % locations.length);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, [locations.length]);
 
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
@@ -83,7 +93,7 @@ export default function Hero() {
                 </motion.div>
             </div>
 
-            {/* FROM DIDIM Label (As seen in reference) */}
+            {/* FROM Rotating Label */}
             <motion.div
                 initial={{ opacity: 0, x: 30 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -93,7 +103,20 @@ export default function Hero() {
                 <div className="text-[12vw] md:text-[6vw] leading-none opacity-10 font-light translate-y-[-5%]">/</div>
                 <div className="flex flex-col leading-[0.75]">
                     <div className="text-[4.5vw] md:text-[2vw] opacity-30">FROM</div>
-                    <div className="text-[10vw] md:text-[4.5vw] opacity-90 text-white">DIDIM</div>
+                    <div className="relative h-[8vw] md:h-[4vw] overflow-hidden">
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={locations[locationIndex]}
+                                initial={{ y: "100%", opacity: 0 }}
+                                animate={{ y: "0%", opacity: 1 }}
+                                exit={{ y: "-100%", opacity: 0 }}
+                                transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                                className="text-[10vw] md:text-[4.5vw] opacity-90 text-white whitespace-nowrap"
+                            >
+                                {locations[locationIndex]}
+                            </motion.div>
+                        </AnimatePresence>
+                    </div>
                 </div>
             </motion.div>
 
