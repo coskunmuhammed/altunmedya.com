@@ -33,9 +33,6 @@ export default function Portfolio() {
                     <h2 className="text-6xl md:text-[10vw] font-anton leading-none tracking-tighter uppercase">
                         {t.portfolio.title}
                     </h2>
-                    <button className="px-8 py-3 rounded-full bg-white text-black font-bold text-sm tracking-widest hover:bg-gray-200 transition-all uppercase whitespace-nowrap">
-                        {t.portfolio.all_projects}
-                    </button>
                 </div>
 
                 {/* Grid */}
