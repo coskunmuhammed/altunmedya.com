@@ -12,11 +12,11 @@ const logos = [
     { id: 6, name: "Bulvar Künefe", src: "/logos/bulvarkunefelogo.svg" },
     { id: 7, name: "Mert Sky", src: "/logos/mertskylogo.svg" },
     { id: 8, name: "Onyx Lounge", src: "/logos/onyxloungelogo.svg" },
-    { id: 9, name: "Danışman Ol", src: "/logos/danismanol.svg", wide: true },
+    { id: 9, name: "Danışman Ol", src: "/logos/danismanol.svg", wide: true, href: "https://danismanol.com" },
     { id: 10, name: "Mekan Suites", src: "/logos/mekansuites.svg", wide: true },
-    { id: 11, name: "Mülkünü Hesapla", src: "/logos/mulkunuhesapla.svg", wide: true },
-    { id: 12, name: "Sat Kirala", src: "/logos/satkirala.svg", wide: true },
-    { id: 13, name: "Yat Sat Kirala", src: "/logos/yatsatkirala.svg", wide: true },
+    { id: 11, name: "Mülkünü Hesapla", src: "/logos/mulkunuhesapla.svg", wide: true, href: "https://mulkunuhesapla.com" },
+    { id: 12, name: "Sat Kirala", src: "/logos/satkirala.svg", wide: true, href: "https://satkirala.com" },
+    { id: 13, name: "Yat Sat Kirala", src: "/logos/yatsatkirala.svg", wide: true, href: "https://yatsatkirala.com" },
 ];
 
 export default function References() {
@@ -48,21 +48,41 @@ export default function References() {
                         ease: "linear",
                     }}
                 >
-                    {duplicatedLogos.map((logo, index) => (
-                        <div
-                            key={`${logo.id}-${index}`}
-                            className={`flex-shrink-0 flex items-center justify-center grayscale opacity-30 hover:opacity-100 hover:grayscale-0 transition-all duration-500 cursor-pointer ${logo.wide
-                                    ? "w-48 md:w-[277px] h-12 md:h-[100px]"
-                                    : "w-32 md:w-56 h-12 md:h-24"
-                                }`}
-                        >
-                            <img
-                                src={logo.src}
-                                alt={logo.name}
-                                className="max-w-full max-h-full object-contain"
-                            />
-                        </div>
-                    ))}
+                    {duplicatedLogos.map((logo, index) => {
+                        const content = (
+                            <div
+                                className={`flex-shrink-0 flex items-center justify-center grayscale opacity-30 hover:opacity-100 hover:grayscale-0 transition-all duration-500 cursor-pointer ${logo.wide
+                                        ? "w-48 md:w-[277px] h-12 md:h-[100px]"
+                                        : "w-32 md:w-56 h-12 md:h-24"
+                                    }`}
+                            >
+                                <img
+                                    src={logo.src}
+                                    alt={logo.name}
+                                    className="max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                        );
+
+                        if (logo.href) {
+                            return (
+                                <a
+                                    key={`${logo.id}-${index}`}
+                                    href={logo.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {content}
+                                </a>
+                            );
+                        }
+
+                        return (
+                            <div key={`${logo.id}-${index}`}>
+                                {content}
+                            </div>
+                        );
+                    })}
                 </motion.div>
             </div>
         </section>
