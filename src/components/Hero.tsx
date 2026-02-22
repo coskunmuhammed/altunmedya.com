@@ -70,24 +70,19 @@ export default function Hero() {
                             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-10" />
                         </span>
                     </motion.div>
-                    <span className="relative inline-block">
-                        STUDIO
-                        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-10" />
-                    </span>
+
+                    {/* Motto */}
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 1.5, duration: 1 }}
+                        className="absolute bottom-[-15%] right-0 text-white/30 text-xs md:text-lg font-montserrat tracking-[0.3em] uppercase hidden md:block"
+                    >
+                        Less is more, none is perfect
+                    </motion.p>
                 </motion.div>
+            </div>
 
-                {/* Motto */}
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1.5, duration: 1 }}
-                    className="absolute bottom-[-15%] right-0 text-white/30 text-xs md:text-lg font-montserrat tracking-[0.3em] uppercase hidden md:block"
-                >
-                    Less is more, none is perfect
-                </motion.p>
-            </motion.div>
-        </div>
-
-        </section >
+        </section>
     );
 }

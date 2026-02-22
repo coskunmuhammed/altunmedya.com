@@ -25,3 +25,99 @@ Import traces:
     ./src/components/Hero.tsx [Client Component SSR]
     ./src/app/page.tsx [Client Component SSR]
     ./src/app/page.tsx [Server Component]
+[00:04:50.922] Browser ERROR   ./src/components/Hero.tsx:88:26
+Parsing ecmascript source code failed
+  86 |                     Less is more, none is perfect
+  87 |                 </motion.p>
+> 88 |             </motion.div>
+     |                          ^
+> 89 |         </div>
+     | ^^^^^^^^^
+  90 |
+  91 |         </section >
+  92 |     );
+
+Expected '</', got 'jsx text'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:04:50.922] Browser ERROR   ./src/components/Hero.tsx:88:26
+Parsing ecmascript source code failed
+  86 |                     Less is more, none is perfect
+  87 |                 </motion.p>
+> 88 |             </motion.div>
+     |                          ^
+> 89 |         </div>
+     | ^^^^^^^^^
+  90 |
+  91 |         </section >
+  92 |     );
+
+Expected '</', got 'jsx text'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:04:50.922] Browser ERROR   ./src/components/Hero.tsx:88:26
+Parsing ecmascript source code failed
+  86 |                     Less is more, none is perfect
+  87 |                 </motion.p>
+> 88 |             </motion.div>
+     |                          ^
+> 89 |         </div>
+     | ^^^^^^^^^
+  90 |
+  91 |         </section >
+  92 |     );
+
+Expected '</', got 'jsx text'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:04:50.922] Browser ERROR   ./src/components/Hero.tsx:88:26
+Parsing ecmascript source code failed
+  86 |                     Less is more, none is perfect
+  87 |                 </motion.p>
+> 88 |             </motion.div>
+     |                          ^
+> 89 |         </div>
+     | ^^^^^^^^^
+  90 |
+  91 |         </section >
+  92 |     );
+
+Expected '</', got 'jsx text'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
