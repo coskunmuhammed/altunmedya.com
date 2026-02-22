@@ -1,5 +1,5 @@
 "use client";
-// Force Vercel redeploy for rotating locations
+// Force Vercel redeploy for dynamic content update - v2
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
