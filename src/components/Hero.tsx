@@ -79,6 +79,23 @@ export default function Hero() {
 
                     {/* Second & Third Line: VIDEO */}
                     <div className="relative self-end -mt-[4vw] md:-mt-[6vw] z-30 flex flex-col items-end">
+                        {/* Second GIF Element (above VIDEO) */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 1.2, delay: 0.7 }}
+                            className="absolute -top-[12vw] md:-top-[8vw] right-[30vw] md:right-[20vw] z-40"
+                        >
+                            <Image
+                                src="/title-img.gif"
+                                alt="Video Visual"
+                                width={350}
+                                height={180}
+                                unoptimized
+                                className="w-[30vw] md:w-[18vw] h-auto rounded-xl"
+                            />
+                        </motion.div>
+
                         <motion.div
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
