@@ -6,11 +6,11 @@ import { useLanguage } from "@/lib/LanguageContext";
 const portfolioItems = [
     {
         id: 1,
-        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop",
+        image: "/2.png",
     },
     {
         id: 2,
-        image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
+        image: "/3.png",
     },
     {
         id: 3,
