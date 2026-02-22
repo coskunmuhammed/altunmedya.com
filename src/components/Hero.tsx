@@ -78,11 +78,10 @@ export default function Hero() {
                                 className="absolute -left-[5vw] top-1/2 -translate-y-1/2 z-20 pointer-events-none opacity-40 md:opacity-100"
                             >
                                 <Image
-                                    src="/cursor-visual.gif"
-                                    alt="Cursor"
+                                    src="/2.png"
+                                    alt="Creative Workspace"
                                     width={200}
                                     height={100}
-                                    unoptimized
                                     className="w-[20vw] md:w-[12vw] h-auto rounded-xl"
                                 />
                             </motion.div>
@@ -114,11 +113,10 @@ export default function Hero() {
                                 className="absolute -right-[5vw] top-1/2 -translate-y-1/2 z-50 pointer-events-none opacity-40 md:opacity-100"
                             >
                                 <Image
-                                    src="/video-visual.gif"
-                                    alt="Video"
+                                    src="/3.png"
+                                    alt="Mobile Design Showcase"
                                     width={400}
                                     height={250}
-                                    unoptimized
                                     className="w-[25vw] md:w-[15vw] h-auto rounded-xl shadow-2xl"
                                 />
                             </motion.div>
