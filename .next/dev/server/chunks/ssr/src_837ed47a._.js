@@ -414,7 +414,7 @@ function Hero() {
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-20 w-full max-w-7xl mx-auto px-6 h-full flex flex-col justify-center items-center pt-32 md:pt-20 text-center",
+                className: "relative z-20 w-full max-w-7xl mx-auto px-6 h-full flex flex-col justify-center items-start lg:items-center pt-32 md:pt-20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                     initial: {
                         opacity: 0
@@ -425,7 +425,7 @@ function Hero() {
                     transition: {
                         duration: 1
                     },
-                    className: "relative flex flex-col font-anton leading-[0.8] tracking-tighter w-full items-center",
+                    className: "relative flex flex-col font-anton leading-[0.8] tracking-tighter w-full",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                             initial: {
@@ -440,7 +440,7 @@ function Hero() {
                                 duration: 1,
                                 ease: "easeOut"
                             },
-                            className: "text-[18vw] md:text-[16vw] text-white uppercase relative z-10",
+                            className: "text-[17vw] md:text-[16vw] text-white uppercase relative z-10 self-start -ml-[2vw] md:ml-0",
                             children: "WE ARE"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Hero.tsx",
@@ -448,7 +448,7 @@ function Hero() {
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative self-center md:self-end -mt-[6vw] md:-mt-[6vw] z-30 flex flex-col items-center md:items-end",
+                            className: "relative self-end -mt-[6vw] md:-mt-[6vw] z-30 flex flex-col items-end",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                 initial: {
                                     x: 100,
@@ -463,7 +463,7 @@ function Hero() {
                                     delay: 0.3,
                                     ease: "easeOut"
                                 },
-                                className: "text-[22vw] md:text-[20vw] text-red-600 uppercase relative",
+                                className: "text-[24vw] md:text-[20vw] text-red-600 uppercase relative pr-[2vw] md:pr-0",
                                 children: "VIDEO"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
@@ -488,7 +488,7 @@ function Hero() {
                                 duration: 1.2,
                                 delay: 0.8
                             },
-                            className: "text-[18vw] md:text-[18vw] text-white uppercase relative -mt-[6vw] md:-mt-[6vw] z-40 self-center",
+                            className: "text-[19vw] md:text-[18vw] text-white uppercase relative -mt-[6vw] md:-mt-[6vw] z-40 self-start md:self-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "relative inline-block",
                                 children: [
