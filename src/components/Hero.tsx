@@ -128,11 +128,10 @@ export default function Hero() {
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1.2, delay: 0.8 }}
-                            className="text-[clamp(3.5rem,14vw,12rem)] text-white uppercase relative z-40 self-end md:mr-0"
+                            className="text-[clamp(3.5rem,14vw,12rem)] uppercase relative z-40 self-end md:mr-0"
                         >
-                            <span className="relative inline-block text-white">
+                            <span className="relative inline-block bg-gradient-to-b from-white via-white/80 to-transparent bg-clip-text text-transparent">
                                 {t.hero.line3}
-                                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-10" />
                             </span>
                         </motion.div>
                     </div>
