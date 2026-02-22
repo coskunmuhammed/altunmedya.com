@@ -42,6 +42,15 @@ export const translations = {
         references: {
             title: "REFERANSLARIMIZ",
         },
+        footer: {
+            headline: "Geleceği birlikte\ninşa edelim.",
+            quick_links: "Hızlı Bağlantılar",
+            contact: "İletişim",
+            address: "Beşiktaş, İstanbul",
+            who_we_are: "Biz Kimiz",
+            blog: "Blog",
+            pricing: "Fiyatlandırma",
+        },
     },
     en: {
         nav: {
@@ -85,6 +94,15 @@ export const translations = {
         },
         references: {
             title: "OUR CLIENTS",
+        },
+        footer: {
+            headline: "Helping brands\nscale & grow.",
+            quick_links: "Quick links",
+            contact: "Contact",
+            address: "Beşiktaş, İstanbul",
+            who_we_are: "Who we are",
+            blog: "Blog",
+            pricing: "Pricing",
         },
     },
 };
