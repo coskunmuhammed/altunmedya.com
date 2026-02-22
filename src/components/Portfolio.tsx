@@ -14,11 +14,11 @@ const portfolioItems = [
     },
     {
         id: 3,
-        image: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000&auto=format&fit=crop",
+        image: "/3.png",
     },
     {
         id: 4,
-        image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop",
+        image: "/mulkunuhesaplacom.png",
     },
 ];
 
