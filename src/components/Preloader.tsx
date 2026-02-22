@@ -32,20 +32,6 @@ export default function Preloader() {
                         fill="currentColor"
                     />
                 </motion.svg>
-
-                {/* Pulsing Glow */}
-                <motion.div
-                    className="absolute inset-0 bg-white/20 blur-2xl rounded-full"
-                    animate={{
-                        scale: [1, 1.5, 1],
-                        opacity: [0.2, 0.5, 0.2],
-                    }}
-                    transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                />
             </div>
 
             <motion.div
