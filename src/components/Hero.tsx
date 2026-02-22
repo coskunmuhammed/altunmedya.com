@@ -56,89 +56,94 @@ export default function Hero() {
                     transition={{ duration: 1 }}
                     className="relative flex flex-col font-anton leading-[0.8] tracking-tighter w-full"
                 >
-                    {/* First Line: BİZ / WE ARE */}
-                    <div className="flex flex-col items-start">
+                    {/* Main Text Content */}
+                    <div className="flex flex-col items-start w-full">
+                        {/* First Line: BİZ / WE ARE */}
                         <motion.div
                             initial={{ x: -100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, ease: "easeOut" }}
-                            className="text-[clamp(3.5rem,16vw,14rem)] text-white uppercase relative z-10 self-start -ml-[2vw] md:ml-0"
+                            className="text-[clamp(3.5rem,14vw,12rem)] text-white uppercase relative z-10 self-start md:ml-0"
                         >
                             {t.hero.line1}
                         </motion.div>
 
-                        {/* GIF Element (under line1) */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20, scale: 0.9 }}
-                            animate={{ opacity: 1, y: 0, scale: 1 }}
-                            transition={{ duration: 1, delay: 0.5 }}
-                            className="relative z-20 -mt-[3vw] md:-mt-[5vw] ml-[2vw] md:ml-[5vw] mb-[-4vw]"
-                        >
-                            <Image
-                                src="/cursor-visual.gif"
-                                alt="Cursor Visual"
-                                width={300}
-                                height={150}
-                                unoptimized
-                                className="w-[25vw] md:w-[15vw] h-auto rounded-xl"
-                            />
-                        </motion.div>
-                    </div>
+                        {/* Middle Line: ROTATING SERVICES (RED) with Dynamic Scaling */}
+                        <div className="relative w-full flex items-center justify-center py-[2vw]">
+                            {/* GIF Element (Cursor Visual) - Positioned relative to the text flow */}
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 1, delay: 0.5 }}
+                                className="absolute -left-[5vw] top-1/2 -translate-y-1/2 z-20 pointer-events-none opacity-40 md:opacity-100"
+                            >
+                                <Image
+                                    src="/cursor-visual.gif"
+                                    alt="Cursor"
+                                    width={200}
+                                    height={100}
+                                    unoptimized
+                                    className="w-[20vw] md:w-[12vw] h-auto rounded-xl"
+                                />
+                            </motion.div>
 
-                    {/* Second & Third Line: ROTATING SERVICES (RED) */}
-                    <div className="relative self-end -mt-[4vw] md:-mt-[6vw] z-30 flex flex-col items-end">
-                        {/* Second GIF Element (positioned over red text) */}
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 1.2, delay: 0.7 }}
-                            className="absolute -top-[5vw] right-[15vw] md:right-[10vw] z-50 pointer-events-none"
-                        >
-                            <Image
-                                src="/video-visual.gif"
-                                alt="Video Visual"
-                                width={600}
-                                height={400}
-                                unoptimized
-                                className="w-[35vw] md:w-[22vw] h-auto rounded-xl shadow-2xl"
-                            />
-                        </motion.div>
+                            <div className="relative h-[clamp(4rem,15vw,14rem)] flex items-center justify-center overflow-hidden w-full px-4 text-center">
+                                <AnimatePresence mode="wait">
+                                    <motion.div
+                                        key={serviceIndex}
+                                        initial={{ y: "100%", opacity: 0 }}
+                                        animate={{ y: "0%", opacity: 1 }}
+                                        exit={{ y: "-100%", opacity: 0 }}
+                                        transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                                        style={{
+                                            // Dynamic font size calculation to prevent overflow
+                                            fontSize: `clamp(2rem, ${Math.min(18, 18 * (14 / Math.max(10, t.hero.services[serviceIndex].length)))}vw, 15rem)`
+                                        }}
+                                        className="text-red-600 uppercase whitespace-nowrap leading-none font-anton drop-shadow-[0_0_30px_rgba(220,38,38,0.3)]"
+                                    >
+                                        {t.hero.services[serviceIndex]}
+                                    </motion.div>
+                                </AnimatePresence>
+                            </div>
 
-                        <div className="relative h-[clamp(5rem,20vw,18rem)] flex items-center justify-end overflow-hidden w-full">
-                            <AnimatePresence mode="wait">
-                                <motion.div
-                                    key={serviceIndex}
-                                    initial={{ y: "100%", opacity: 0 }}
-                                    animate={{ y: "0%", opacity: 1 }}
-                                    exit={{ y: "-100%", opacity: 0 }}
-                                    transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
-                                    className="text-[clamp(4rem,18vw,16rem)] text-red-600 uppercase relative pr-[2vw] md:pr-0 whitespace-nowrap"
-                                >
-                                    {t.hero.services[serviceIndex]}
-                                </motion.div>
-                            </AnimatePresence>
+                            {/* GIF Element (Video Visual) - Positioned relative to the text flow */}
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 1.2, delay: 0.7 }}
+                                className="absolute -right-[5vw] top-1/2 -translate-y-1/2 z-50 pointer-events-none opacity-40 md:opacity-100"
+                            >
+                                <Image
+                                    src="/video-visual.gif"
+                                    alt="Video"
+                                    width={400}
+                                    height={250}
+                                    unoptimized
+                                    className="w-[25vw] md:w-[15vw] h-auto rounded-xl shadow-2xl"
+                                />
+                            </motion.div>
                         </div>
-                    </div>
 
-                    {/* Fourth Line: AJANSIYIZ / AGENCY */}
-                    <motion.div
-                        initial={{ y: 50, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 1.2, delay: 0.8 }}
-                        className="text-[clamp(4.2rem,18vw,16rem)] text-white uppercase relative -mt-[4vw] md:-mt-[6vw] z-40 self-start md:self-center"
-                    >
-                        <span className="relative inline-block text-white">
-                            {t.hero.line3}
-                            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-10" />
-                        </span>
-                    </motion.div>
+                        {/* Third Line: AJANSIYIZ / AGENCY */}
+                        <motion.div
+                            initial={{ y: 50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 1.2, delay: 0.8 }}
+                            className="text-[clamp(3.5rem,14vw,12rem)] text-white uppercase relative z-40 self-end md:mr-0"
+                        >
+                            <span className="relative inline-block text-white">
+                                {t.hero.line3}
+                                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-10" />
+                            </span>
+                        </motion.div>
+                    </div>
 
                     {/* Motto */}
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1.5, duration: 1 }}
-                        className="absolute bottom-[-15%] left-0 text-white/30 text-xs md:text-lg font-montserrat tracking-[0.3em] uppercase hidden md:block"
+                        className="absolute bottom-[-10vw] md:bottom-[-2vw] left-0 text-white/30 text-[2vw] md:text-sm font-montserrat tracking-[0.3em] uppercase"
                     >
                         {t.hero.motto}
                     </motion.p>
