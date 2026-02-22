@@ -64,15 +64,15 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20, scale: 0.9 }}
                             animate={{ opacity: 1, y: 0, scale: 1 }}
                             transition={{ duration: 1, delay: 0.5 }}
-                            className="relative z-20 -mt-[2vw] md:-mt-[4vw] ml-[10vw] md:ml-[15vw] mb-[-2vw]"
+                            className="relative z-20 -mt-[3vw] md:-mt-[5vw] ml-[2vw] md:ml-[5vw] mb-[-4vw]"
                         >
                             <Image
                                 src="/title-img-2.gif"
                                 alt="Title Visual"
-                                width={400}
-                                height={200}
+                                width={300}
+                                height={150}
                                 unoptimized
-                                className="w-[35vw] md:w-[25vw] h-auto rounded-2xl"
+                                className="w-[25vw] md:w-[15vw] h-auto rounded-xl"
                             />
                         </motion.div>
                     </div>
