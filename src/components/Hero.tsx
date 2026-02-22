@@ -56,6 +56,39 @@ export default function Hero() {
                     transition={{ duration: 1 }}
                     className="relative flex flex-col font-anton leading-[0.8] tracking-tighter w-full"
                 >
+                    {/* GIF Element (Cursor Visual) - Left Corner area */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8, x: -50 }}
+                        animate={{ opacity: 1, scale: 1, x: 0 }}
+                        transition={{ duration: 1.2, delay: 0.5 }}
+                        className="absolute -left-[2vw] bottom-[10vh] md:bottom-20 z-20 pointer-events-none opacity-40 md:opacity-100"
+                    >
+                        <Image
+                            src="/cursor-visual.gif"
+                            alt="Cursor"
+                            width={180}
+                            height={90}
+                            unoptimized
+                            className="w-[25vw] md:w-[12vw] h-auto rounded-xl"
+                        />
+                    </motion.div>
+
+                    {/* GIF Element (Video Visual) - Top Right Corner area */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8, y: -50 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        transition={{ duration: 1.2, delay: 0.7 }}
+                        className="absolute -right-[2vw] top-[-5vh] md:top-[-2vw] z-50 pointer-events-none opacity-40 md:opacity-100"
+                    >
+                        <Image
+                            src="/video-visual.gif"
+                            alt="Video"
+                            width={350}
+                            height={220}
+                            unoptimized
+                            className="w-[30vw] md:w-[15vw] h-auto rounded-xl shadow-2xl"
+                        />
+                    </motion.div>
                     {/* Main Text Content */}
                     <div className="flex flex-col items-start w-full">
                         {/* First Line: BİZ / WE ARE */}
@@ -70,23 +103,6 @@ export default function Hero() {
 
                         {/* Middle Line: ROTATING SERVICES (RED) with Dynamic Scaling */}
                         <div className="relative w-full flex items-center justify-center py-[2vw]">
-                            {/* GIF Element (Cursor Visual) - Positioned relative to the text flow */}
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 1, delay: 0.5 }}
-                                className="absolute -left-[5vw] top-1/2 -translate-y-1/2 z-20 pointer-events-none opacity-40 md:opacity-100"
-                            >
-                                <Image
-                                    src="/cursor-visual.gif"
-                                    alt="Cursor"
-                                    width={200}
-                                    height={100}
-                                    unoptimized
-                                    className="w-[20vw] md:w-[12vw] h-auto rounded-xl"
-                                />
-                            </motion.div>
-
                             <div className="relative h-[clamp(4rem,15vw,14rem)] flex items-center justify-center overflow-hidden w-full px-4 text-center">
                                 <AnimatePresence mode="wait">
                                     <motion.div
@@ -105,23 +121,6 @@ export default function Hero() {
                                     </motion.div>
                                 </AnimatePresence>
                             </div>
-
-                            {/* GIF Element (Video Visual) - Positioned relative to the text flow */}
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 1.2, delay: 0.7 }}
-                                className="absolute -right-[5vw] top-1/2 -translate-y-1/2 z-50 pointer-events-none opacity-40 md:opacity-100"
-                            >
-                                <Image
-                                    src="/video-visual.gif"
-                                    alt="Video"
-                                    width={400}
-                                    height={250}
-                                    unoptimized
-                                    className="w-[25vw] md:w-[15vw] h-auto rounded-xl shadow-2xl"
-                                />
-                            </motion.div>
                         </div>
 
                         {/* Third Line: AJANSIYIZ / AGENCY */}
