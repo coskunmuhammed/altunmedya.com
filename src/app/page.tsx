@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import ServicesMarquee from "@/components/ServicesMarquee";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import References from "@/components/References";
@@ -15,6 +16,7 @@ export default function Home() {
         <main className="min-h-screen grain">
             <Navbar />
             <Hero />
+            <ServicesMarquee />
             <Services />
             <Portfolio />
             <References />
