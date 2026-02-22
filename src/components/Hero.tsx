@@ -112,10 +112,10 @@ export default function Hero() {
                                         exit={{ y: "-100%", opacity: 0 }}
                                         transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
                                         style={{
-                                            // Dynamic font size calculation to prevent overflow
-                                            fontSize: `clamp(2rem, ${Math.min(18, 18 * (14 / Math.max(10, t.hero.services[serviceIndex].length)))}vw, 15rem)`
+                                            // More conservative font size calculation to prevent overflow
+                                            fontSize: `clamp(2rem, ${Math.min(14, 14 * (10 / Math.max(8, t.hero.services[serviceIndex].length)))}vw, 12rem)`
                                         }}
-                                        className="text-red-600 uppercase whitespace-nowrap leading-none font-anton drop-shadow-[0_0_30px_rgba(220,38,38,0.3)]"
+                                        className="text-red-600 uppercase whitespace-nowrap leading-none font-anton drop-shadow-[0_0_30px_rgba(220,38,38,0.3)] max-w-full inline-block"
                                     >
                                         {t.hero.services[serviceIndex]}
                                     </motion.div>
