@@ -6,45 +6,19 @@ import { useLanguage } from "@/lib/LanguageContext";
 const portfolioItems = [
     {
         id: 1,
-        title: "Vogue Editorial",
-        category: "Photography",
-        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop",
-        size: "tall",
+        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop",
     },
     {
         id: 2,
-        title: "Brand Launch",
-        category: "Cinematography",
-        image: "https://images.unsplash.com/photo-1492691523567-6170f0295dbd?q=80&w=1000&auto=format&fit=crop",
-        size: "wide",
+        image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
     },
     {
         id: 3,
-        title: "Visual ID",
-        category: "Branding",
         image: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000&auto=format&fit=crop",
-        size: "normal",
     },
     {
         id: 4,
-        title: "Street Fusion",
-        category: "Photography",
         image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop",
-        size: "normal",
-    },
-    {
-        id: 5,
-        title: "Abstract Motion",
-        category: "Digital Art",
-        image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1000&auto=format&fit=crop",
-        size: "wide",
-    },
-    {
-        id: 6,
-        title: "Future Sounds",
-        category: "Music Video",
-        image: "https://images.unsplash.com/photo-1514525253361-bee8d4dc3ed8?q=80&w=1000&auto=format&fit=crop",
-        size: "tall",
     },
 ];
 
@@ -52,50 +26,62 @@ export default function Portfolio() {
     const { t } = useLanguage();
 
     return (
-        <section id="portfolio" className="py-16 md:py-24 px-6 bg-white dark:bg-black">
-            <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16">
-                    <div>
-                        <span className="text-gray-400 text-sm tracking-widest uppercase mb-2 block">{t.portfolio.tagline}</span>
-                        <h2 className="text-4xl md:text-8xl font-syne font-bold tracking-tighter">{t.portfolio.title}</h2>
-                    </div>
-                    <p className="text-gray-500 max-w-md mt-4 md:mt-0">
-                        {t.portfolio.description}
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
-                    {portfolioItems.map((item, index) => (
-                        <motion.div
-                            key={item.id}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                            className={`group relative overflow-hidden cursor-pointer ${item.size === "tall" ? "md:row-span-2" :
-                                item.size === "wide" ? "md:col-span-2" : ""
-                                }`}
-                        >
-                            <div
-                                className="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
-                                style={{ backgroundImage: `url(${item.image})` }}
-                            />
-                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
-                                <span className="text-xs text-white/70 uppercase tracking-widest mb-2">
-                                    {t.portfolio.items[index]?.category || item.category}
-                                </span>
-                                <h3 className="text-2xl font-bold text-white leading-tight">
-                                    {t.portfolio.items[index]?.title || item.title}
-                                </h3>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
-
-                <div className="mt-16 text-center">
-                    <button className="underline underline-offset-8 font-bold tracking-widest hover:text-gray-400 transition-colors uppercase">
+        <section id="portfolio" className="py-24 md:py-40 px-6 bg-black text-white">
+            <div className="max-w-[1600px] mx-auto">
+                {/* Header */}
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-8">
+                    <h2 className="text-6xl md:text-[10vw] font-anton leading-none tracking-tighter uppercase">
+                        {t.portfolio.title}
+                    </h2>
+                    <button className="px-8 py-3 rounded-full bg-white text-black font-bold text-sm tracking-widest hover:bg-gray-200 transition-all uppercase whitespace-nowrap">
                         {t.portfolio.all_projects}
                     </button>
+                </div>
+
+                {/* Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-24">
+                    {portfolioItems.map((item, index) => {
+                        const translatedItem = t.portfolio.items[index];
+                        if (!translatedItem) return null;
+
+                        return (
+                            <motion.div
+                                key={item.id}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8, delay: index * 0.1 }}
+                                className="group cursor-pointer"
+                            >
+                                {/* Image Container */}
+                                <div className="relative aspect-[4/3] md:aspect-[1.4/1] overflow-hidden rounded-[2rem] md:rounded-[3rem] mb-10 bg-zinc-900">
+                                    <motion.div
+                                        className="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                                        style={{ backgroundImage: `url(${item.image})` }}
+                                    />
+                                </div>
+
+                                {/* Info */}
+                                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                                    <h3 className="text-3xl md:text-5xl font-syne font-bold tracking-tight group-hover:translate-x-2 transition-transform duration-500">
+                                        {translatedItem.title}
+                                    </h3>
+
+                                    {/* Tags */}
+                                    <div className="flex flex-wrap gap-2">
+                                        {translatedItem.tags.map((tag: string, i: number) => (
+                                            <span
+                                                key={i}
+                                                className="px-5 py-1.5 rounded-full border border-white/20 text-[10px] md:text-xs font-mono uppercase tracking-widest text-white/60 group-hover:border-white/50 group-hover:text-white transition-all duration-500"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </motion.div>
+                        );
+                    })}
                 </div>
             </div>
         </section>

@@ -43,16 +43,14 @@ export const translations = {
         },
         portfolio: {
             tagline: "Seçili İşler",
-            title: "PORTFOLYO",
+            title: "SEÇİLİ PROJELER",
             description: "Sınırları zorlayan, estetik ve stratejiyi harmanlayan son dönem çalışmalarımızdan bazıları.",
-            all_projects: "TÜM PROJELERİ İNCELE",
+            all_projects: "TÜM PROJELERİ GÖR",
             items: [
-                { title: "Vogue Editoryal", category: "Fotoğrafçılık" },
-                { title: "Marka Lansmanı", category: "Sinematografi" },
-                { title: "Görsel Kimlik", category: "Markalama" },
-                { title: "Sokak Füzyonu", category: "Fotoğrafçılık" },
-                { title: "Soyut Hareket", category: "Dijital Sanat" },
-                { title: "Geleceğin Sesleri", category: "Müzik Videosu" },
+                { title: "Times One Hundred", category: "Teknoloji", tags: ["TEKNOLOJİ", "MARKALAMA", "TASARIM"] },
+                { title: "Moments Infinity", category: "Sinematografi", tags: ["TEKNOLOJİ", "MARKALAMA", "TASARIM"] },
+                { title: "Görsel Kimlik", category: "Markalama", tags: ["MARKALAMA", "STRATEJİ"] },
+                { title: "Sokak Füzyonu", category: "Fotoğrafçılık", tags: ["FOTOĞRAF", "MODA"] },
             ]
         },
         contact: {
@@ -120,16 +118,14 @@ export const translations = {
         },
         portfolio: {
             tagline: "Selected Works",
-            title: "PORTFOLIO",
+            title: "FEATURED PROJECTS",
             description: "Some of our recent work that pushes boundaries, blending aesthetics and strategy.",
             all_projects: "VIEW ALL PROJECTS",
             items: [
-                { title: "Vogue Editorial", category: "Photography" },
-                { title: "Brand Launch", category: "Cinematography" },
-                { title: "Visual ID", category: "Branding" },
-                { title: "Street Fusion", category: "Photography" },
-                { title: "Abstract Motion", category: "Digital Art" },
-                { title: "Future Sounds", category: "Music Video" },
+                { title: "Times One Hundred", category: "Technology", tags: ["TECHNOLOGY", "BRANDING", "DESIGN"] },
+                { title: "Moments Infinity", category: "Cinematography", tags: ["TECHNOLOGY", "BRANDING", "DESIGN"] },
+                { title: "Visual ID", category: "Branding", tags: ["BRANDING", "STRATEGY"] },
+                { title: "Street Fusion", category: "Photography", tags: ["PHOTO", "FASHION"] },
             ]
         },
         contact: {
