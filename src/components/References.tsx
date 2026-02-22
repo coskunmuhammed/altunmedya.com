@@ -40,15 +40,16 @@ export default function References() {
                 </motion.h2>
             </div>
 
-            <div className="relative flex">
+            <div className="relative flex overflow-hidden">
                 <motion.div
-                    className="flex space-x-12 md:space-x-24 items-center"
-                    animate={{ x: [0, -5000] }} // Increased offset for more logos
+                    className="flex space-x-12 md:space-x-24 items-center whitespace-nowrap"
+                    animate={{ x: ["0%", "-50%"] }}
                     transition={{
-                        duration: 60, // Slower for even more content
+                        duration: 40,
                         repeat: Infinity,
                         ease: "linear",
                     }}
+                    style={{ display: "flex", width: "fit-content" }}
                 >
                     {duplicatedLogos.map((logo, index) => {
                         const content = (
