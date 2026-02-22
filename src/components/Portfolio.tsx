@@ -10,7 +10,7 @@ const portfolioItems = [
     },
     {
         id: 2,
-        image: "/3.png",
+        image: "/4.png",
     },
     {
         id: 3,
