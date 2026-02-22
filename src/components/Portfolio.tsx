@@ -64,7 +64,7 @@ export default function Portfolio() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
                     {portfolioItems.map((item, index) => (
                         <motion.div
                             key={item.id}

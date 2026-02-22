@@ -97,7 +97,7 @@ export default function Footer() {
                 <div className="relative pt-10 border-t border-white/5">
                     <div className="flex flex-col md:flex-row justify-between items-end gap-10">
                         <div className="w-full">
-                            <h1 className="text-[15vw] md:text-[18vw] font-anton text-red-600/90 leading-none tracking-tighter select-none -mb-4 md:-mb-10 opacity-100 uppercase">
+                            <h1 className="text-[clamp(4rem,18vw,20rem)] font-anton text-red-600/90 leading-none tracking-tighter select-none -mb-4 md:-mb-10 opacity-100 uppercase">
                                 ALTUN.STUDIO
                             </h1>
                         </div>

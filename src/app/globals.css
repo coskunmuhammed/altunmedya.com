@@ -11,10 +11,14 @@
   --background-rgb: 0, 0, 0;
 }
 
+html,
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   font-family: var(--font-inter);
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .font-syne {

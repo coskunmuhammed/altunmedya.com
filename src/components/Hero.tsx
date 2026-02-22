@@ -52,18 +52,18 @@ export default function Hero() {
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1, ease: "easeOut" }}
-                        className="text-[17vw] md:text-[16vw] text-white uppercase relative z-10 self-start -ml-[2vw] md:ml-0"
+                        className="text-[clamp(3.5rem,16vw,14rem)] text-white uppercase relative z-10 self-start -ml-[2vw] md:ml-0"
                     >
                         WE ARE
                     </motion.div>
 
                     {/* Second & Third Line: VIDEO */}
-                    <div className="relative self-end -mt-[6vw] md:-mt-[6vw] z-30 flex flex-col items-end">
+                    <div className="relative self-end -mt-[4vw] md:-mt-[6vw] z-30 flex flex-col items-end">
                         <motion.div
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                            className="text-[24vw] md:text-[20vw] text-red-600 uppercase relative pr-[2vw] md:pr-0"
+                            className="text-[clamp(5rem,20vw,18rem)] text-red-600 uppercase relative pr-[2vw] md:pr-0"
                         >
                             VIDEO
                         </motion.div>
@@ -74,9 +74,9 @@ export default function Hero() {
                         initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.2, delay: 0.8 }}
-                        className="text-[19vw] md:text-[18vw] text-white uppercase relative -mt-[6vw] md:-mt-[6vw] z-40 self-start md:self-center"
+                        className="text-[clamp(4.2rem,18vw,16rem)] text-white uppercase relative -mt-[4vw] md:-mt-[6vw] z-40 self-start md:self-center"
                     >
-                        <span className="relative inline-block">
+                        <span className="relative inline-block text-white">
                             STUDIO
                             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-10" />
                         </span>
