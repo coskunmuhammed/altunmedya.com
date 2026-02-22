@@ -17,7 +17,7 @@ export default function ServicesMarquee() {
     const displayServices = [...services, ...services];
 
     return (
-        <div className="bg-white/5 border-y border-white/10 py-4 md:py-6 overflow-hidden relative z-30">
+        <div className="bg-black/40 backdrop-blur-md border-y border-white/5 py-4 md:py-6 overflow-hidden relative z-30">
             <motion.div
                 className="flex whitespace-nowrap items-center"
                 animate={{ x: ["0%", "-50%"] }}
