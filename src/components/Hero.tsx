@@ -59,7 +59,7 @@ export default function Hero() {
                             WE ARE
                         </motion.div>
 
-                        {/* GIF Element */}
+                        {/* GIF Element (under WE) */}
                         <motion.div
                             initial={{ opacity: 0, y: 20, scale: 0.9 }}
                             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -67,8 +67,8 @@ export default function Hero() {
                             className="relative z-20 -mt-[3vw] md:-mt-[5vw] ml-[2vw] md:ml-[5vw] mb-[-4vw]"
                         >
                             <Image
-                                src="/title-img-2.gif"
-                                alt="Title Visual"
+                                src="/cursor-visual.gif"
+                                alt="Cursor Visual"
                                 width={300}
                                 height={150}
                                 unoptimized
@@ -86,10 +86,13 @@ export default function Hero() {
                             transition={{ duration: 1.2, delay: 0.7 }}
                             className="absolute -top-[5vw] right-[15vw] md:right-[10vw] z-50 pointer-events-none"
                         >
-                            <img
-                                src="/title-img.gif"
+                            <Image
+                                src="/video-visual.gif"
                                 alt="Video Visual"
-                                className="w-[35vw] md:w-[20vw] h-auto rounded-xl shadow-2xl"
+                                width={600}
+                                height={400}
+                                unoptimized
+                                className="w-[35vw] md:w-[22vw] h-auto rounded-xl shadow-2xl"
                             />
                         </motion.div>
 
