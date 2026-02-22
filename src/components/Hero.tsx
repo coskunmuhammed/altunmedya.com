@@ -29,30 +29,30 @@ export default function Hero() {
                 </video>
             </div>
 
-            <div className="relative z-20 w-full max-w-7xl mx-auto px-6 h-full flex flex-col justify-center items-start lg:items-center pt-32 md:pt-20">
+            <div className="relative z-20 w-full max-w-7xl mx-auto px-6 h-full flex flex-col justify-center items-center pt-32 md:pt-20 text-center">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className="relative flex flex-col font-anton leading-[0.85] tracking-tighter w-full"
+                    className="relative flex flex-col font-anton leading-[0.8] tracking-tighter w-full items-center"
                 >
                     {/* First Line: WE ARE */}
                     <motion.div
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1, ease: "easeOut" }}
-                        className="text-[11vw] md:text-[16vw] text-white uppercase relative z-10"
+                        className="text-[18vw] md:text-[16vw] text-white uppercase relative z-10"
                     >
                         WE ARE
                     </motion.div>
 
                     {/* Second & Third Line: VIDEO */}
-                    <div className="relative self-end -mt-[4vw] md:-mt-[6vw] z-30 flex flex-col items-end">
+                    <div className="relative self-center md:self-end -mt-[6vw] md:-mt-[6vw] z-30 flex flex-col items-center md:items-end">
                         <motion.div
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                            className="text-[11vw] md:text-[20vw] text-red-600 uppercase relative"
+                            className="text-[22vw] md:text-[20vw] text-red-600 uppercase relative"
                         >
                             VIDEO
                         </motion.div>
@@ -63,26 +63,31 @@ export default function Hero() {
                         initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.2, delay: 0.8 }}
-                        className="text-[11vw] md:text-[18vw] text-white uppercase relative -mt-[2vw] md:-mt-[6vw] z-40 self-start md:self-center"
+                        className="text-[18vw] md:text-[18vw] text-white uppercase relative -mt-[6vw] md:-mt-[6vw] z-40 self-center"
                     >
                         <span className="relative inline-block">
                             STUDIO
                             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-10" />
                         </span>
                     </motion.div>
-
-                    {/* Motto */}
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 1.5, duration: 1 }}
-                        className="absolute bottom-[-15%] right-0 text-white/30 text-xs md:text-lg font-montserrat tracking-[0.3em] uppercase hidden md:block"
-                    >
-                        Less is more, none is perfect
-                    </motion.p>
+                    <span className="relative inline-block">
+                        STUDIO
+                        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-10" />
+                    </span>
                 </motion.div>
-            </div>
 
-        </section>
+                {/* Motto */}
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1.5, duration: 1 }}
+                    className="absolute bottom-[-15%] right-0 text-white/30 text-xs md:text-lg font-montserrat tracking-[0.3em] uppercase hidden md:block"
+                >
+                    Less is more, none is perfect
+                </motion.p>
+            </motion.div>
+        </div>
+
+        </section >
     );
 }
