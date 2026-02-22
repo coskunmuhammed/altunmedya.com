@@ -99,25 +99,21 @@ export default function Hero() {
                 initial={{ opacity: 0, x: 30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5, duration: 1.2, ease: "easeOut" }}
-                className="absolute bottom-[3%] right-[2vw] md:bottom-[6%] md:right-[4vw] z-50 flex items-center gap-3 md:gap-5 font-anton text-white uppercase tracking-tighter select-none"
+                className="absolute bottom-[3%] right-[2vw] md:bottom-[6%] md:right-[4vw] z-50 flex items-center select-none"
             >
-                <div className="text-[12vw] md:text-[6vw] leading-none opacity-10 font-light">/</div>
-                <div className="flex items-center gap-3 md:gap-4">
-                    <div className="text-[4.5vw] md:text-[2vw] opacity-30 shrink-0">FROM</div>
-                    <div className="relative h-[10vw] md:h-[5vw] min-w-[45vw] md:min-w-[20vw] overflow-hidden flex items-center justify-end">
-                        <AnimatePresence mode="wait">
-                            <motion.div
-                                key={locations[locationIndex]}
-                                initial={{ y: "100%", opacity: 0 }}
-                                animate={{ y: "0%", opacity: 1 }}
-                                exit={{ y: "-100%", opacity: 0 }}
-                                transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
-                                className="text-[10vw] md:text-[4.5vw] opacity-90 text-white whitespace-nowrap leading-none text-right"
-                            >
-                                {locations[locationIndex]}
-                            </motion.div>
-                        </AnimatePresence>
-                    </div>
+                <div className="relative h-[10vw] md:h-[5vw] min-w-[45vw] md:min-w-[20vw] overflow-hidden flex items-center justify-end">
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={locations[locationIndex]}
+                            initial={{ y: "100%", opacity: 0 }}
+                            animate={{ y: "0%", opacity: 1 }}
+                            exit={{ y: "-100%", opacity: 0 }}
+                            transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                            className="text-[10vw] md:text-[4.5vw] opacity-90 text-white whitespace-nowrap leading-none text-right font-anton uppercase tracking-tighter"
+                        >
+                            {locations[locationIndex]}
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
             </motion.div>
 
