@@ -5,12 +5,9 @@ import { useLanguage } from "@/lib/LanguageContext";
 
 // Placeholder logos - we'll replace these with real ones later
 const logos = [
-    { id: 1, name: "Brand 1" },
-    { id: 2, name: "Brand 2" },
-    { id: 3, name: "Brand 3" },
-    { id: 4, name: "Brand 4" },
-    { id: 5, name: "Brand 5" },
-    { id: 6, name: "Brand 6" },
+    { id: 1, name: "Reklam Deposu", src: "/images/logos/reklam-deposu.png" },
+    { id: 2, name: "SQ Beach Club", src: "/images/logos/sq-beach-club.png" },
+    { id: 3, name: "Halil Usta", src: "/images/logos/halil-usta.png" },
 ];
 
 export default function References() {
@@ -45,12 +42,13 @@ export default function References() {
                     {duplicatedLogos.map((logo, index) => (
                         <div
                             key={`${logo.id}-${index}`}
-                            className="flex-shrink-0 w-32 md:w-48 h-12 md:h-16 flex items-center justify-center grayscale opacity-30 hover:opacity-100 hover:grayscale-0 transition-all duration-500 cursor-pointer"
+                            className="flex-shrink-0 w-32 md:w-56 h-12 md:h-24 flex items-center justify-center grayscale opacity-30 hover:opacity-100 hover:grayscale-0 transition-all duration-500 cursor-pointer"
                         >
-                            {/* Placeholder for Logo */}
-                            <div className="w-full h-full bg-white/10 rounded flex items-center justify-center font-mono text-[10px] text-white/50 tracking-widest uppercase">
-                                {logo.name}
-                            </div>
+                            <img
+                                src={logo.src}
+                                alt={logo.name}
+                                className="max-w-full max-h-full object-contain"
+                            />
                         </div>
                     ))}
                 </motion.div>
