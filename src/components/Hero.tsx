@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Hero() {
@@ -48,14 +49,33 @@ export default function Hero() {
                     className="relative flex flex-col font-anton leading-[0.8] tracking-tighter w-full"
                 >
                     {/* First Line: WE ARE */}
-                    <motion.div
-                        initial={{ x: -100, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 1, ease: "easeOut" }}
-                        className="text-[clamp(3.5rem,16vw,14rem)] text-white uppercase relative z-10 self-start -ml-[2vw] md:ml-0"
-                    >
-                        WE ARE
-                    </motion.div>
+                    <div className="flex flex-col items-start">
+                        <motion.div
+                            initial={{ x: -100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 1, ease: "easeOut" }}
+                            className="text-[clamp(3.5rem,16vw,14rem)] text-white uppercase relative z-10 self-start -ml-[2vw] md:ml-0"
+                        >
+                            WE ARE
+                        </motion.div>
+
+                        {/* GIF Element */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20, scale: 0.9 }}
+                            animate={{ opacity: 1, y: 0, scale: 1 }}
+                            transition={{ duration: 1, delay: 0.5 }}
+                            className="relative z-20 -mt-[2vw] md:-mt-[4vw] ml-[10vw] md:ml-[15vw] mb-[-2vw]"
+                        >
+                            <Image
+                                src="/title-img-2.gif"
+                                alt="Title Visual"
+                                width={400}
+                                height={200}
+                                unoptimized
+                                className="w-[35vw] md:w-[25vw] h-auto rounded-2xl border border-white/10 shadow-2xl"
+                            />
+                        </motion.div>
+                    </div>
 
                     {/* Second & Third Line: VIDEO */}
                     <div className="relative self-end -mt-[4vw] md:-mt-[6vw] z-30 flex flex-col items-end">
