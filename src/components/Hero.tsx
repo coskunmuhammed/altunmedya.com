@@ -61,7 +61,7 @@ export default function Hero() {
                         initial={{ opacity: 0, scale: 0.8, x: -50 }}
                         animate={{ opacity: 1, scale: 1, x: 0 }}
                         transition={{ duration: 1.2, delay: 0.5 }}
-                        className="absolute -left-[2vw] bottom-[10vh] md:bottom-20 z-20 pointer-events-none opacity-40 md:opacity-100"
+                        className="absolute -left-[5vw] md:-left-[2vw] bottom-[5vh] md:bottom-20 z-20 pointer-events-none opacity-40 md:opacity-100"
                     >
                         <Image
                             src="/cursor-visual.gif"
@@ -69,7 +69,7 @@ export default function Hero() {
                             width={180}
                             height={90}
                             unoptimized
-                            className="w-[25vw] md:w-[12vw] h-auto rounded-xl"
+                            className="w-[20vw] md:w-[12vw] h-auto rounded-xl"
                         />
                     </motion.div>
 
@@ -78,7 +78,7 @@ export default function Hero() {
                         initial={{ opacity: 0, scale: 0.8, y: -50 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         transition={{ duration: 1.2, delay: 0.7 }}
-                        className="absolute -right-[2vw] top-[-5vh] md:top-[-2vw] z-50 pointer-events-none opacity-40 md:opacity-100"
+                        className="absolute -right-[5vw] md:-right-[2vw] top-[-8vh] md:top-[-2vw] z-50 pointer-events-none opacity-40 md:opacity-100"
                     >
                         <Image
                             src="/video-visual.gif"
@@ -86,7 +86,7 @@ export default function Hero() {
                             width={350}
                             height={220}
                             unoptimized
-                            className="w-[30vw] md:w-[15vw] h-auto rounded-xl shadow-2xl"
+                            className="w-[25vw] md:w-[15vw] h-auto rounded-xl shadow-2xl"
                         />
                     </motion.div>
                     {/* Main Text Content */}
