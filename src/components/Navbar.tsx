@@ -30,9 +30,13 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed w-full z-50 transition-all duration-500 ${scrolled
-                ? "bg-black/10 backdrop-blur-xl py-4 shadow-2xl"
+                ? "bg-black/20 backdrop-blur-xl py-4 shadow-2xl"
                 : "bg-transparent py-6"
                 }`}
+            style={{
+                maskImage: 'linear-gradient(to bottom, black 0%, black 80%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 80%, transparent 100%)'
+            }}
         >
             <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
                 <Link
