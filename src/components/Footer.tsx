@@ -22,12 +22,8 @@ export default function Footer() {
 
     const quickLinks = [
         { label: t.nav.about, href: "#" },
-        { label: t.footer.who_we_are, href: "#" },
         { label: t.nav.services, href: "#" },
         { label: t.nav.portfolio, href: "#" },
-        { label: t.footer.blog, href: "#" },
-        { label: t.footer.pricing, href: "#" },
-        { label: t.nav.contact, href: "#contact" },
     ];
 
     return (
