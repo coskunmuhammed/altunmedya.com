@@ -15,6 +15,17 @@ export const translations = {
             cta_contact: "BİZE ULAŞIN",
             motto: "ZAMANSIZ YARATICILIK",
         },
+        marquee: {
+            services: [
+                "MARKA KİMLİĞİ TASARIMI",
+                "İNFOGRAFİK VE DİĞER",
+                "MARKALAMA VE KİMLİK",
+                "WEB TASARIM VE GELİŞTİRME",
+                "UI / UX TASARIM",
+                "İÇERİK ÜRETİMİ",
+                "SOSYAL MEDYA YÖNETİMİ",
+            ]
+        },
         services: {
             tagline: "Neler Yapıyoruz?",
             title_start: "VERİDEN",
@@ -22,16 +33,27 @@ export const translations = {
             title_end: "TAM KAPSAMLI ÇÖZÜMLER",
             s1_title: "Görsel Prodüksiyon",
             s1_desc: "Sinematik video ve high-end fotoğraf çekimleri ile hikayenizi en güçlü şekilde anlatıyoruz.",
+            s1_tag: "Görsel",
             s2_title: "Dijital Strateji",
             s2_desc: "Modern mecralarda markanızı öne çıkaracak veri odaklı içerik stratejileri geliştiriyoruz.",
+            s2_tag: "Strateji",
             s3_title: "Marka Kimliği",
             s3_desc: "Logodan tipografiye, markanızın tüm görsel dilini baştan aşağı tasarlıyoruz.",
+            s3_tag: "Tasarım",
         },
         portfolio: {
             tagline: "Seçili İşler",
             title: "PORTFOLYO",
             description: "Sınırları zorlayan, estetik ve stratejiyi harmanlayan son dönem çalışmalarımızdan bazıları.",
             all_projects: "TÜM PROJELERİ İNCELE",
+            items: [
+                { title: "Vogue Editoryal", category: "Fotoğrafçılık" },
+                { title: "Marka Lansmanı", category: "Sinematografi" },
+                { title: "Görsel Kimlik", category: "Markalama" },
+                { title: "Sokak Füzyonu", category: "Fotoğrafçılık" },
+                { title: "Soyut Hareket", category: "Dijital Sanat" },
+                { title: "Geleceğin Sesleri", category: "Müzik Videosu" },
+            ]
         },
         contact: {
             title: "BİZE ULAŞIN",
@@ -50,6 +72,8 @@ export const translations = {
             who_we_are: "Biz Kimiz",
             blog: "Blog",
             pricing: "Fiyatlandırma",
+            policies: "POLİTİKALAR",
+            sitemap: "SİTE HARİTASI",
         },
     },
     en: {
@@ -68,6 +92,17 @@ export const translations = {
             cta_contact: "CONTACT US",
             motto: "TIMELESS CREATIVITY",
         },
+        marquee: {
+            services: [
+                "BRAND IDENTITY DESIGN",
+                "INFOGRAPHIC AND OTHER",
+                "BRANDING & IDENTITY",
+                "WEB DESIGN & DEVELOPMENT",
+                "UI / UX DESIGN",
+                "CONTENT CREATION",
+                "SOCIAL MEDIA MANAGEMENT",
+            ]
+        },
         services: {
             tagline: "What We Do?",
             title_start: "FROM DATA",
@@ -75,16 +110,27 @@ export const translations = {
             title_end: "FULL-SCALE SOLUTIONS",
             s1_title: "Visual Production",
             s1_desc: "We tell your story in the most powerful way with cinematic video and high-end photography.",
+            s1_tag: "Visuals",
             s2_title: "Digital Strategy",
             s2_desc: "We develop data-driven content strategies that will make your brand stand out in modern channels.",
+            s2_tag: "Strategy",
             s3_title: "Brand Identity",
             s3_desc: "From logo to typography, we design your brand's entire visual language from scratch.",
+            s3_tag: "Design",
         },
         portfolio: {
             tagline: "Selected Works",
             title: "PORTFOLIO",
             description: "Some of our recent work that pushes boundaries, blending aesthetics and strategy.",
             all_projects: "VIEW ALL PROJECTS",
+            items: [
+                { title: "Vogue Editorial", category: "Photography" },
+                { title: "Brand Launch", category: "Cinematography" },
+                { title: "Visual ID", category: "Branding" },
+                { title: "Street Fusion", category: "Photography" },
+                { title: "Abstract Motion", category: "Digital Art" },
+                { title: "Future Sounds", category: "Music Video" },
+            ]
         },
         contact: {
             title: "WORK WITH US",
@@ -103,6 +149,8 @@ export const translations = {
             who_we_are: "Who we are",
             blog: "Blog",
             pricing: "Pricing",
+            policies: "POLICIES",
+            sitemap: "SITEMAP",
         },
     },
 };

@@ -1,18 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const services = [
-    "BRAND IDENTITY DESIGN",
-    "INFOGRAPHIC AND OTHER",
-    "BRANDING & IDENTITY",
-    "WEB DESIGN & DEVELOPMENT",
-    "UI / UX DESIGN",
-    "CONTENT CREATION",
-    "SOCIAL MEDIA MANAGEMENT",
-];
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function ServicesMarquee() {
+    const { t } = useLanguage();
+    const services = t.marquee.services;
     // Duplicate services to ensure a seamless loop
     const displayServices = [...services, ...services];
 

@@ -81,8 +81,12 @@ export default function Portfolio() {
                                 style={{ backgroundImage: `url(${item.image})` }}
                             />
                             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
-                                <span className="text-xs text-white/70 uppercase tracking-widest mb-2">{item.category}</span>
-                                <h3 className="text-2xl font-bold text-white leading-tight">{item.title}</h3>
+                                <span className="text-xs text-white/70 uppercase tracking-widest mb-2">
+                                    {t.portfolio.items[index]?.category || item.category}
+                                </span>
+                                <h3 className="text-2xl font-bold text-white leading-tight">
+                                    {t.portfolio.items[index]?.title || item.title}
+                                </h3>
                             </div>
                         </motion.div>
                     ))}

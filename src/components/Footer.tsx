@@ -115,8 +115,8 @@ export default function Footer() {
                     <div className="mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-white/20 text-[10px] uppercase tracking-[0.3em] font-medium">
                         <p>© 2026 ALTUN.STUDIO. {t.contact.rights}</p>
                         <div className="flex gap-8 mt-4 md:mt-0">
-                            <span className="hover:text-white/40 cursor-default transition-colors">POLICIES</span>
-                            <span className="hover:text-white/40 cursor-default transition-colors">SITEMAP</span>
+                            <span className="hover:text-white/40 cursor-default transition-colors">{t.footer.policies}</span>
+                            <span className="hover:text-white/40 cursor-default transition-colors">{t.footer.sitemap}</span>
                         </div>
                     </div>
                 </div>

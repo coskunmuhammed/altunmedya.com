@@ -25,21 +25,21 @@ export default function Services() {
             description: t.services.s1_desc,
             icon: <Video className="w-6 h-6" />,
             color: "from-purple-500/20 to-transparent",
-            tag: "Visuals",
+            tag: t.services.s1_tag,
         },
         {
             title: t.services.s2_title,
             description: t.services.s2_desc,
             icon: <Share2 className="w-6 h-6" />,
             color: "from-orange-500/20 to-transparent",
-            tag: "Strategy",
+            tag: t.services.s2_tag,
         },
         {
             title: t.services.s3_title,
             description: t.services.s3_desc,
             icon: <Palette className="w-6 h-6" />,
             color: "from-blue-500/20 to-transparent",
-            tag: "Design",
+            tag: t.services.s3_tag,
         },
     ];
 
