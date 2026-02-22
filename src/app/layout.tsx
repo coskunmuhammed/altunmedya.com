@@ -12,6 +12,9 @@ const anton = Anton({ weight: "400", subsets: ["latin"], variable: "--font-anton
 export const metadata: Metadata = {
     title: "Altunmedya | Creative Agency",
     description: "Boutique media agency for high-impact visual content.",
+    icons: {
+        icon: "/favicon.png",
+    },
 };
 
 export default function RootLayout({
