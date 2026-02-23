@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
 import Logo from "./Logo";
-import { FaInstagram, FaLinkedinIn, FaBehance, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import { FiArrowUp } from "react-icons/fi";
 
 export default function Footer() {
@@ -14,10 +14,7 @@ export default function Footer() {
     };
 
     const socialLinks = [
-        { icon: <FaInstagram />, href: "#" },
-        { icon: <FaXTwitter />, href: "#" },
-        { icon: <FaBehance />, href: "#" },
-        { icon: <FaLinkedinIn />, href: "#" },
+        { icon: <FaInstagram />, href: "https://www.instagram.com/altunmedyaeu/" },
     ];
 
     const quickLinks = [
