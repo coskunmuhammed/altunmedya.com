@@ -61,7 +61,7 @@ export default function Hero() {
                         initial={{ opacity: 0, scale: 0.8, x: -50 }}
                         animate={{ opacity: 1, scale: 1, x: 0 }}
                         transition={{ duration: 1.2, delay: 0.5 }}
-                        className="absolute -left-[5vw] md:-left-[2vw] bottom-[5vh] md:bottom-20 z-20 pointer-events-none opacity-40 md:opacity-100"
+                        className="absolute -left-4 md:-left-12 lg:-left-20 bottom-10 md:bottom-20 z-20 pointer-events-none opacity-40 md:opacity-100"
                     >
                         <Image
                             src="/cursor-visual.gif"
@@ -69,7 +69,7 @@ export default function Hero() {
                             width={180}
                             height={90}
                             unoptimized
-                            className="w-[20vw] md:w-[12vw] h-auto rounded-xl"
+                            className="w-32 md:w-48 lg:w-56 h-auto rounded-xl"
                         />
                     </motion.div>
 
@@ -78,7 +78,7 @@ export default function Hero() {
                         initial={{ opacity: 0, scale: 0.8, y: -50 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         transition={{ duration: 1.2, delay: 0.7 }}
-                        className="absolute -right-[5vw] md:-right-[2vw] top-[-8vh] md:top-[-2vw] z-50 pointer-events-none opacity-40 md:opacity-100"
+                        className="absolute -right-4 md:-right-12 lg:-right-20 top-[-2rem] md:top-[-4rem] z-50 pointer-events-none opacity-40 md:opacity-100"
                     >
                         <Image
                             src="/video-visual.gif"
@@ -86,7 +86,7 @@ export default function Hero() {
                             width={350}
                             height={220}
                             unoptimized
-                            className="w-[25vw] md:w-[15vw] h-auto rounded-xl shadow-2xl"
+                            className="w-40 md:w-64 lg:w-72 h-auto rounded-xl shadow-2xl"
                         />
                     </motion.div>
                     {/* Main Text Content */}
@@ -141,35 +141,35 @@ export default function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1.5, duration: 1 }}
-                        className="absolute bottom-[-10vw] md:bottom-[-2vw] left-0 text-white/30 text-[2vw] md:text-sm font-montserrat tracking-[0.3em] uppercase"
+                        className="absolute bottom-[-4rem] md:bottom-[-2rem] left-0 text-white/30 text-xs md:text-sm font-montserrat tracking-[0.3em] uppercase"
                     >
                         {t.hero.motto}
                     </motion.p>
                 </motion.div>
-            </div>
 
-            {/* FROM Rotating Label */}
-            <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5, duration: 1.2, ease: "easeOut" }}
-                className="absolute bottom-[3%] right-[2vw] md:bottom-[6%] md:right-[4vw] z-50 flex items-center select-none"
-            >
-                <div className="relative h-[10vw] md:h-[5vw] min-w-[45vw] md:min-w-[20vw] overflow-hidden flex items-center justify-end">
-                    <AnimatePresence mode="wait">
-                        <motion.div
-                            key={locations[locationIndex]}
-                            initial={{ y: "100%", opacity: 0 }}
-                            animate={{ y: "0%", opacity: 1 }}
-                            exit={{ y: "-100%", opacity: 0 }}
-                            transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
-                            className="text-[10vw] md:text-[4.5vw] opacity-90 text-white whitespace-nowrap leading-none text-right font-anton uppercase tracking-tighter"
-                        >
-                            {locations[locationIndex]}
-                        </motion.div>
-                    </AnimatePresence>
-                </div>
-            </motion.div>
+                {/* FROM Rotating Label */}
+                <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.5, duration: 1.2, ease: "easeOut" }}
+                    className="absolute bottom-6 md:bottom-12 right-6 z-50 flex items-center select-none"
+                >
+                    <div className="relative h-[clamp(3rem,8vw,5rem)] min-w-[200px] md:min-w-[300px] overflow-hidden flex items-center justify-end">
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={locations[locationIndex]}
+                                initial={{ y: "100%", opacity: 0 }}
+                                animate={{ y: "0%", opacity: 1 }}
+                                exit={{ y: "-100%", opacity: 0 }}
+                                transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                                className="text-[clamp(2.5rem,6vw,4.5rem)] opacity-90 text-white whitespace-nowrap leading-none text-right font-anton uppercase tracking-tighter"
+                            >
+                                {locations[locationIndex]}
+                            </motion.div>
+                        </AnimatePresence>
+                    </div>
+                </motion.div>
+            </div>
 
         </section>
     );

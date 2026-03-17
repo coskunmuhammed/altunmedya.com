@@ -11,7 +11,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Home() {
     return (
-        <main className="min-h-screen grain">
+        <main className="min-h-screen grain overflow-x-hidden w-full">
             <Navbar />
             <Hero />
             <ServicesMarquee />

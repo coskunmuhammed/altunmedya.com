@@ -30,7 +30,7 @@ export default function Portfolio() {
             <div className="max-w-[1600px] mx-auto">
                 {/* Header */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-8">
-                    <h2 className="text-6xl md:text-[10vw] font-anton leading-none tracking-tighter uppercase">
+                    <h2 className="text-6xl md:text-[clamp(4rem,8vw,8rem)] font-anton leading-none tracking-tighter uppercase">
                         {t.portfolio.title}
                     </h2>
                 </div>
